@@ -16,5 +16,6 @@ import lombok.Setter;
 public class TokenEntity extends BaseEntity {
 	@Column(length = 1000)
 	private String token;
+	
 	private Date tokenExpDate;
 }
