@@ -18,7 +18,7 @@ public class UserPrincipal implements UserDetails {
 	
 	
 	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
+	public Collection getAuthorities() {
 		// TODO Auto-generated method stub
 		return null;
 	}
