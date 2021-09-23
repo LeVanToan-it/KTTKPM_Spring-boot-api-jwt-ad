@@ -23,4 +23,30 @@ public class RoleEntity extends BaseEntity {
 	@OneToMany
 	@JoinTable(name="t_role_permission", joinColumns= {@JoinColumn(name="role_id")}, inverseJoinColumns= {@JoinColumn(name="permission_id")})
 	private Set<PermissionEntity> permissions = new HashSet<>();
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+
+	public String getRoleKey() {
+		return roleKey;
+	}
+
+	public void setRoleKey(String roleKey) {
+		this.roleKey = roleKey;
+	}
+
+	public Set<PermissionEntity> getPermissions() {
+		return permissions;
+	}
+
+	public void setPermissions(Set<PermissionEntity> permissions) {
+		this.permissions = permissions;
+	}
+
+
 }

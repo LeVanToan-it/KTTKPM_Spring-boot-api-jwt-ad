@@ -17,6 +17,26 @@ public class UserPrincipal implements UserDetails {
 	private Collection authorities;
 	
 	
+	public Long getUserID() {
+		return userID;
+	}
+
+	public void setUserID(Long userID) {
+		this.userID = userID;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setAuthorities(Collection authorities) {
+		this.authorities = authorities;
+	}
+
 	@Override
 	public Collection getAuthorities() {
 		// TODO Auto-generated method stub
